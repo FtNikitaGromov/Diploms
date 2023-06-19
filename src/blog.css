@@ -1,0 +1,90 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #5495d3e0;
+  }
+  
+  .blog-item {
+    width: 70%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(247, 15, 15, 0.836);
+    text-align: center;
+  }
+  
+  .blog-image {
+    width: 72%;
+    height: 72%;
+    object-fit: cover;
+   
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .blog-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .blog-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-button:hover {
+    background-color: #e91e63;
+  }
+  /*кнопка*/
+  .expand-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .expand-button:hover {
+    background-color: #45a049;
+  }
+  .renornatia{
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+    
+  }
+  .video-container {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  

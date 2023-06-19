@@ -1,0 +1,75 @@
+.text-placeholder {
+  text-align: center;
+}
+
+.text-highlight {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(51, 94%, 49%, 0.89);
+  }
+  
+  .button-section button {
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s;
+    text-decoration: none; /* Убираем стандартное подчеркивание текста */
+  }
+  
+  .button-section button:before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Начальное состояние: скрытый фон над кнопкой */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 241, 1);
+    transition: top 0.5s; /* Замедляем выезжание фона до 0.5 секунд */
+  }
+  
+  .button-section button span {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.3s;
+  }
+  
+  .button-section button:hover:before,
+  .button-section button:focus:before,
+  .button-section button:active:before {
+    top: 0; /* Выезжаем фон сверху вниз при наведении, фокусировке и нажатии */
+  }
+  
+  .button-section button:hover span,
+  .button-section button:focus span {
+    color: rgb(252, 172, 0);
+  }
+  
+  .button-section button:active span {
+    color: #000;
+  }
+  
+  /* Адаптация для мобильных устройств до 525px */
+  @media screen and (max-width: 525px) {
+    .button-section {
+      flex-wrap: wrap; /* Переносим кнопки на новую строку */
+    }
+    
+    .button-section button {
+      width: 100%; /* Занимаем всю доступную ширину */
+      margin: 5px 0; /* Добавляем отступы между кнопками */
+    }
+  }
+  
